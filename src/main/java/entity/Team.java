@@ -49,7 +49,7 @@ public class Team {
         return name;
     }
 
-    public String[] getMembers() {
+    public static String[] getMembers() {
         return members;
     }
 }
