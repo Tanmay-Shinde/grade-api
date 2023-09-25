@@ -4,13 +4,13 @@ import entity.Grade;
 import api.GradeDB;
 
 public final class GetGradeUseCase {
-    private final GradeDB gradeDB;
+    private static GradeDB gradeDB = null;
 
     public GetGradeUseCase(GradeDB gradeDB) {
-        this.gradeDB = gradeDB;
+        GetGradeUseCase.gradeDB = gradeDB;
     }
 
-    public Grade getGrade(String utorid, String course) {
-        return this.gradeDB.getGrade(utorid, course);
+    public static Grade getGrade(String utorid, String course) {
+        return gradeDB.getGrade(utorid, course);
     }
 }
