@@ -4,7 +4,7 @@ public class Team {
 
     // Refer to the API documentation for the meaning of these fields.
     private String name;
-    private String[] members;
+    private static String[] members;
 
     public Team(String name, String[] members) {
         this.name = name;
