@@ -10,7 +10,7 @@ public final class GetGradeUseCase {
         this.gradeDB = gradeDB;
     }
 
-    public Grade getGrade(String utorid, String course) {
+    public static Grade getGrade(String utorid, String course) {
         return gradeDB.getGrade(utorid, course);
     }
 }
